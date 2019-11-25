@@ -30,3 +30,12 @@ class UpdateUserForm(forms.ModelForm):
 
 
 class UpdateUserProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['name', 'location', 'prof_picture', 'bio', 'contact']
+
+
+class RatingsForm(forms.ModelForm):
+    class Meta:
+        model = Rating
+        fields = ['design', 'usability', 'content']
