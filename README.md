@@ -7,7 +7,7 @@
 This is a Django application for displaying different projects and different users can vote on them based on their usability,design and content.
   
 ##  Live Link  
-Click https://django-heroku-album.herokuapp.com/ to visit the webite
+Click https://awardsalbert.herokuapp.com/ to visit the webite
 ## Screenshots 
 ###### Home page
 
