@@ -17,6 +17,11 @@ def index(request):
         posts = None
     return render(request, 'awwards/index.html', {'posts': posts, 'form': form, 'random_post': random_post})
 
+class ProfileViewSet(viewsets.ModelViewSet):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
+
+
 
 
 # Create your views here.
