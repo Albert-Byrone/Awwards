@@ -13,3 +13,5 @@ urlpatterns = [
     url(r'^project/(?P<id>\d+)',views.project,name='project'),
     url(r'^search/$',views.search_project,name='search'),
 ]
+if settings.DEBUG:
+    urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
