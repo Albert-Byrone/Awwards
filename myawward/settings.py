@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'awwards',
     'bootstrap4',
     'crispy_forms', 
+    'pyuploadcare.dj',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
