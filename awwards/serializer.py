@@ -8,3 +8,8 @@ class ProfileSerializer(serializers.ModelSerializer):
     fields = ['name','prof_picture','bio','location','contact']
 
 
+class PostSerializer(serializers.ModelSerializer):
+    model = Post
+    fields = ['id','title','description','technology','date','photo','user','url']
+
+
