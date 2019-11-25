@@ -1,5 +1,13 @@
-from django.conf.urls import url
+from django.conf.urls import url,include
 from . import views
+from rest_framework import routers
+from django.conf.urls.static import static
+from django.conf import settings
+
+router = routers.DefaultRouter()
+router.register('users',views.UserViewSet)
+router.register('posts',views.PostViewSet)
+router.register('profile',views.ProfileViewSet)
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
