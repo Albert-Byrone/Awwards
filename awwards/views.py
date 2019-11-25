@@ -46,6 +46,10 @@ def signup(request):
             form = SignupForm()
         return render(request,'registration/registration_form',{'form':form})
 
+@login_required(login_url='/accounts/login')
+def profile(request,username):
+    return render(request,'profile.html')
+
 
 # Create your views here.
 def index(request):
