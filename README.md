@@ -1,4 +1,4 @@
-# Album 
+# Awwards
 ## Author  
   
 >[Albert-Byrone](https://github.com/Albert-Byrone/Awwards)  
